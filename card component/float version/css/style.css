@@ -34,7 +34,6 @@
 body {
     font-size: var(--main-font-size);
     background-color: var(--primary-cream);
-
     height: 100vh;
 }
 
@@ -53,20 +52,16 @@ img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-
     max-width: 345px;
     margin: 0 auto;    
-
     overflow: hidden;
     border-radius: 10px;
 }
 
 .card-inner {
     padding: 25px;
-
     font-size: var(--main-font-size);
     font-family: var(--main-font-family);
-
     background-color: var(--neutral-white);
 }
 
@@ -149,6 +144,7 @@ img {
         width: 50%;
         padding: 20px;
         max-height: 375px;
+        height: 375px;
     }
 
     .card-category {
@@ -192,6 +188,7 @@ img {
 
         padding: 30px;
         max-height: 450px;
+        height: 450px;
     }
 
     .card-category {
