@@ -14,13 +14,13 @@ Users should be able to:
 
 ### Screenshot
 
-![demo](https://raw.githubusercontent.com/ndorph1n/frontend-mentor/main/card%20component/float%20version/image/Card%20component%20demo.png)
+![demo](https://raw.githubusercontent.com/ndorph1n/frontend-mentor/main/card%20component//image/Card%20component%20demo.png)
 
 
 ### Links
 
-- Solution URL: [GitHub Solution URL](https://github.com/ndorph1n/frontend-mentor/tree/main/card%20component/float%20version)
-- Live Site URL: [Live site URL](https://ndorph1n.github.io/frontend-mentor/card%20component/float%20version/)
+- Solution URL: [GitHub Solution URL](https://github.com/ndorph1n/frontend-mentor/tree/main/card%20component)
+- Live Site URL: [Live site URL](https://ndorph1n.github.io/frontend-mentor/card%20component/)
 
 
 ## My process
