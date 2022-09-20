@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-![demo](github.com/ndorph1n/frontend-mentor/blob/main/card%20component/float%20version/image/Card%20component%20demo.png?raw=true)
+![demo](https://raw.githubusercontent.com/ndorph1n/frontend-mentor/main/card%20component/float%20version/image/Card%20component%20demo.png)
 
 
 ### Links
