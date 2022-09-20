@@ -54,10 +54,9 @@ img {
 .card{
     display: flex;
     flex-direction: column;
-    max-width: 345px; 
+    max-width: 345px;
     overflow: hidden;
     border-radius: 10px;
-    
 }
 
 .card-inner {
@@ -71,6 +70,8 @@ img {
     text-transform: uppercase;
     color: var(--neutral-dark-grayish-blue);
     letter-spacing: 3px;
+    font-weight: 500;
+    font-size: var(--main-font-size-sm);
 }
 
 .card-title {
@@ -133,6 +134,7 @@ img {
 @media (min-width: 577px) {
     .card {
         flex-direction: row;
+        max-height: 450px;
     }
     .card-img {
         width: 50%;
@@ -153,7 +155,6 @@ img {
     }
 
     .card-category {
-        font-size: var(--main-font-size-md);
         letter-spacing: 4px;
     }
 
@@ -187,6 +188,7 @@ img {
     }
 
     .card-category {
+        font-size: var(--main-font-size);
         letter-spacing: 4px;
     }
 
