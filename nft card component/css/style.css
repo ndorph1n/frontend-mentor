@@ -11,7 +11,7 @@
     --neutral-white: hsl(0, 0%, 100%);
     /*FONT-SIZE*/
     --main-font-size: 16px;
-    --title-font-size: 19px;
+    --title-font-size: 21px;
     --author-font-size: 15px;
     --sm-title-font-size: 21px;
     --sm-author-font-size: 15px;
@@ -68,7 +68,7 @@ a {
     position: relative;
     max-width: 280px;
     overflow: hidden;
-    border-radius: 7px;
+    border-radius: 5px;
 
 }
 
@@ -166,42 +166,53 @@ a {
 
 /* MEDIA QUERIES */
 /* MEDIUM + LARGE SCREENS */
-@media (min-width: 523px) {
+@media (min-width: 375px) {
     .card {
-        max-width: 316px;
-        padding: 22px 22px 28px 22px;
-        gap: 23px
+        max-width: 350px;
+        gap: 25px;
+        padding: 25px 25px 30px 25px;
+    }
+
+    .card-img {
+        max-width: 300px;
     }
 
     .card-title {
         font-size: var(--title-font-size);
     }
 
+    .card-inner:not(.card-title){
+        letter-spacing: 0.9px;
+    }
+
     .card-text {
-        margin: 13px 0 20px 0;
+        margin: 20px 0 25px 0;
         line-height: 1.5;
     }
 
     .card-price {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
         gap: 30px;
     }
 
     .card-price::after {
         height: 2px;
-        width: 273px;
-        bottom: -19px;
+        width: 300px;
+        bottom: -25px;
     }
 
     .price-time-left {
-        letter-spacing: -0.5px;
+        letter-spacing: 0px;
     }
     
     .price-time-left svg {
-        margin-right: 2px;
+        margin-right: 5px;
     }
 
     .card-author-img {
-        width: 30px;
+        width: 35px;
+    }
+    .card-author-name {
+        letter-spacing: 0.5px;
     }
 }
