@@ -133,6 +133,7 @@ a {
 
 .price-value {
     color: var(--primary-cyan);
+    font-weight: 500;
 }
 
 .price-time-left svg {
@@ -166,7 +167,7 @@ a {
 
 /* MEDIA QUERIES */
 /* MEDIUM + LARGE SCREENS */
-@media (min-width: 375px) {
+@media (min-width: 376px) {
     .card {
         max-width: 350px;
         gap: 25px;
