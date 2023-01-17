@@ -2,33 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="https://kit.fontawesome.com/1cb374b1ab.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
+  <main class="main">
+    <section class="section">
+      <img class="logo" src="image/logo.svg" alt="Ping logo" width="53px">
+      <h1 class="section-title">We are launching <b>soon!</b></h1>
+      <h4 class="section-subtitle">Subscribe and get notified</h4>
+      <form class="section-form" action="" method="post">
+        <input class="email-input pill-form" type="#" name="email" id="email" placeholder="Your email address...">
+        <button class="button pill-form" type="submit"><span>Notify Me</span></button>
+      </form>
+      <img  class="section-img" src="image/illustration-dashboard.png" alt="illustration-dashboard" width="320px">
 
-  We are launching soon!
+      <footer class="section-footer">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f soc-icon"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter soc-icon"></i></a>
+          <a href="#">
+            <i class="fa-brands fa-instagram soc-icon"></i></a>
+        </div>
+        <p class="section-footer-text">&copy;Copyright Ping. All rights reserved.</p> 
+      </footer>
+    </section>
 
-  Subscribe and get notified
+    <footer class="main-footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/ndorph1n" target="_blank">EnD1nG</a>.
+      </p>
+    </footer>
+  </main>
 
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
