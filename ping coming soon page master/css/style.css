@@ -165,7 +165,7 @@
     /* MEDIUM AND LARGE SCREENS */
     @media (min-width: 576px) {
         .logo {
-            width: 86px;
+            width: 86px !important;
         }
         .section-title {
             font-size: var(--main-font-size-l);
