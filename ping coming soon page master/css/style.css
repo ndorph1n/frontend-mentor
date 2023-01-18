@@ -102,6 +102,7 @@
     }
     .button span {
         font-size: var(--main-font-size-s);
+        font-weight: 600;
     }
     .button:hover {
         transition: all 0.2s linear;
@@ -112,8 +113,8 @@
     }
     .error {
         position: absolute;
-        bottom: -40%;
-        left: 24%;
+        bottom: 43%;
+        left: 8%;
         z-index: 1;
         color: var(--secondary-light-red);
         font-style: italic;
@@ -125,6 +126,7 @@
     }
     .section-footer {
         margin: 7.5em 0;
+        color: var(--neutral-gray);
     }
     .socials {
         display: flex;
@@ -203,4 +205,8 @@
             font-size: var(--main-font-size-s);
             margin-top: 2em;
         }
+        .error {
+            bottom: 0;
+            left: 23%;
+        }   
     }

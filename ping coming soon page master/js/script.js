@@ -23,7 +23,7 @@ const isCompliant = value => value === "" ? false : true;
 
 const showError = (input, message) => {
     const errorField = document.querySelector(".error");
-    const inputBorder = document.getElementById('email').style.cssText = "border: 1px solid var(--secondary-light-red)";
+    const inputBorder = document.getElementById('email').style.cssText = "border: 1px solid var(--secondary-light-red);margin-bottom: 1.5em";
     if (errorField) {
         errorField.remove();
         const errorMessage = input.insertAdjacentHTML("afterend", '<span class="error">' + message + '</span>');
