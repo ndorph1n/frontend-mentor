@@ -176,10 +176,11 @@
     /* LARGE SCREEN */
     @media (min-width: 1200px) {
         .section {
-            padding: 10.4em 10.3em;
+            padding: 7.25em 10.3em 8.5em 10.3em;
             display: grid;
             grid-template-columns: 0.8fr 0.95fr;
-            grid-template-rows: 1fr 0.97fr;
+            grid-template-rows: 1fr 1.5fr;
+            row-gap: 7em;
         }
         .title-block {
             text-align: left;
@@ -194,7 +195,7 @@
 
         .rating-block {
             gap: 1.15em;
-            margin: 1.8em 0 7em 0;
+            margin: 1.8em 0 0 0;
         }
         .rating {
             width: 26.2em;
