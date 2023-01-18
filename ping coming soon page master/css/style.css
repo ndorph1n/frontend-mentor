@@ -196,7 +196,7 @@
             font-size: var(--main-font-size-m)
         }
         .section-img {
-            width: 44%;
+            width: 44% !important;
         }
         .section-footer {
             margin: 4.5em 0;
