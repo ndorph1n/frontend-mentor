@@ -194,7 +194,7 @@
 
         .rating-block {
             gap: 1.15em;
-            margin: 1.8em 0 10em 0;
+            margin: 1.8em 0 7em 0;
         }
         .rating {
             width: 26.2em;
@@ -234,13 +234,6 @@
         }
         .review:nth-child(3) {
             align-self: end;
-        }
-    }
-
-    /* EXTRA LARGE SCREEN */
-    @media (min-width: 1400px){
-        .rating-block {
-            margin: 1.8em 0 6em 0;
         }
     }
 
