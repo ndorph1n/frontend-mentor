@@ -42,6 +42,10 @@
     }
 
 /* MAIN STYLES */
+    .main {
+        height: 100vh;
+    }
+
     .section {
         text-align: center;
         padding: 5em 1.5em;
@@ -179,8 +183,8 @@
             padding: 7.25em 10.3em 8.5em 10.3em;
             display: grid;
             grid-template-columns: 0.8fr 0.95fr;
-            grid-template-rows: 1fr 1.5fr;
-            row-gap: 7em;
+            grid-template-rows: 50% 55%;
+            row-gap: 3em;
         }
         .title-block {
             text-align: left;
