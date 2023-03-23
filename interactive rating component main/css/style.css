@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* VARIABLES */
+    :root {
+        /*COLORS*/
+        --primary-orange: hsl(25,97%,53%);
+        --neutral-white: hsl(0, 0%, 100%);
+        --neutral-light-grey: hsl(217, 12%, 63%);
+        --neutral-medium-grey: hsl(216, 12%, 54%);
+        --neutral-dark-blue: hsl(213, 19%, 18%);
+        --neutral-medium-dark-blue: hsl(213, 19%, 23%);
+        --neutral-very-dark-blue: hsl(216, 12%, 8%);
+        /*FONT-SIZE*/
+        --main-font-size: 0.9375em;
+        --text-font-size: 1em;
+        --title-font-size: 1.8em;
+        --summary-font-size: 1em;
+        --button-font-size: 1.1em;
+        /*FONTS*/
+        --main-font-family: 'Overpass', sans-serif;
+    }
+/* GLOBAL STYLES */
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-size: var(--main-font-size);
+        font-family: var(--main-font-family);
+        background-color: var(--neutral-very-dark-blue);
+        color: var(--neutral-light-grey);
+    }
+    a {
+        text-decoration: none;
+    }
+    button {
+        border: none;
+    }
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }   
+/* MAIN STYLES */
+    .main {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .rating-card {
+        max-width: 27.5em;
+        margin: 0 auto;
+        background-color: var(--neutral-dark-blue);
+        border-radius: 1.5em;
+    }
+    .rating-tab {
+        padding: 2.1em 2em 0.8em 2em;
+        display: none;
+    }
+    .rating-star {
+        background-color: var(--neutral-medium-dark-blue);
+        padding: 1em;
+        border-radius: 50%;
+    }
+    .tab-title {
+        font-size: var(--title-font-size);
+        font-weight: 700;
+        color: var(--neutral-white);
+        margin: 1em 0 0.4em 0;
+    }
+    .tab-text {
+        font-size: var(--text-font-size);
+        line-height: 1.65;
+        padding-right: 1em;
+    }
+    
+    .rating-form {
+        margin: 1.6em 0 1.4em 0;
+    }
+    .form-label {
+        display: inline-block;
+        background-color: var(--neutral-medium-dark-blue);
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: 700;
+        padding: 1.25em;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .form-label:not(.form-label:nth-child(1)){
+        margin-left: 1em;
+    }
+    .form-label:hover {
+        color: var(--neutral-white);
+        background-color: var(--neutral-medium-grey);
+    }
+
+.form-label:has(.rating-value:checked){
+        color: var(--neutral-white);
+        background-color: var(--primary-orange);
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        margin-top: 2em;
+        background-color: var(--primary-orange);
+        color: var(--neutral-white);
+        padding: 0.7em 4em;
+        border-radius: 3em;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        font-family: var(--main-font-family);
+        font-size: var(--button-font-size);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .button:hover {
+        color: var(--primary-orange);
+        background-color: var(--neutral-white);
+    }
+
+    .rating-end {
+        text-align: center;
+        padding: 3em 2em;
+    }
+    .rating-summary {
+        width: 55%;
+        margin: 2em auto 0 auto;
+        padding: 0.5em;
+        background-color: var(--neutral-medium-dark-blue);
+        color: var(--primary-orange);
+        font-size: var(--summary-font-size);
+        border-radius: 2em;
+    }
+
+
+    .active {
+        display: block;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
