@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    font-family: Poppins, sans-serif;
+}
+
+.calculator {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    width: 100%;
+    max-width: 840px;
+    max-height: 650px;
+    height: 650px;
+    border-radius: 25px;
+    border-bottom-right-radius: 200px;
+    padding: 55px;
+    font-size: 32px;
+}
+
+.inputField {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.inputField__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    letter-spacing: 4.5px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+
+.input {
+    width: 160px;
+    height: 70px;
+    border-radius: 5px;
+    padding: 25px;
+    outline: none;
+    font-size: 32px;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1px solid hsl(0, 1%, 44%);;
+}
+
+.input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+.input::placeholder {
+    color: hsl(0, 1%, 44%);
+    font-weight: 700;
+}
+
+.inputField__button {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 2;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .1s ease-in;
+}
+
+.inputField__button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__divider {
+    margin: 50px 0;
+}
+
+.result {
+    font-size: 104px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.07;
+}
+.result__years, 
+.result__days, 
+.result__months {
+    color: hsl(259, 100%, 65%);
+}
+
+.page__attribution {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+}
+
+.red::placeholder {
+    color: hsl(0, 100%, 67%);
+}
+
+.error {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    font-size: 10px;
+    line-height: 0.9;
+    letter-spacing: normal;
+    font-style: italic;
+}
+
+@media screen and (max-width:768px) {
+
+    .calculator {
+        width: 345px;
+        height: 490px;
+        padding: 50px 25px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .inputField {
+        gap: 20px;
+    }
+
+    .inputField__label{
+        gap: 5px;
+        letter-spacing: 3px;
+        font-size: 12px;
+    }
+
+    .input {
+        font-size: 18px;
+        width: 85px;
+        height: 50px;
+        padding: 25px 12px;
+    }
+
+    .calculator__divider {
+        margin: 60px 0 65px ;
+    }
+
+    .inputField__button {
+        width: 65px;
+        height: 65px;
+        top: 105px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .inputField__button > svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .result {
+        font-size: 56px;
+        letter-spacing: -1px;
+    }
+}
+
+@media screen and (max-width:345px){
+    .page {
+        align-items: normal;
+    }
+}

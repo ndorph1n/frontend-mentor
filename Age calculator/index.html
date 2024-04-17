@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="./style/style.css">
+  </style>
+</head>
+<body class="page">
+  <article class="calculator page__calculator">
+    <form class="inputField calculator__inputField">
+      <label class="inputField__label">
+        DAY
+        <input type="text" name="day" class="input input_day" placeholder="DD" >
+      </label>
+
+      <label class="inputField__label">
+        MONTH
+        <input type="text" name="month" class="input input_month" placeholder="MM">
+      </label>
+      
+      <label class="inputField__label">
+        YEAR
+        <input type="text" name="year" class="input input_year" placeholder="YYYY">
+      </label>
+
+      <button type="button" class="inputField__button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        
+      </button>
+    </form>
+
+    <hr class="calculator__divider">
+
+    <div class="results calculator__results">
+      <p class="result results_years">
+        <span class="result__years">--</span> years
+      </p>
+
+      <p class="result results_months">
+        <span class="result__months">--</span> months
+      </p>
+
+      <p class="result results_days">
+        <span class="result__days">--</span> days
+      </p>
+
+    </div>
+
+  </article>
+  
+  <div class="page__attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/ndorph1n" target="_blank">ndorph1n</a>.
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
