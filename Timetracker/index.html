@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="page">
+  <main class="main page__main">
+    <article class="tracker main__tracker">
+      <section class="tracker__header">
+        <div class="profile tracker__profile">
+          <a href="#" class="profile__image">
+            <img src="./images/image-jeremy.png" alt="Jeremy" class="profile__img">
+          </a>
+          <span class="profile__label">Report for</span>
+          <h1 class="profile__name">Jeremy Robson</h1>
+        </div>
+        <div class="controls tracker__controls mainColor">
+          <ul class="control controls__list ">
+            <li class="control__item" data-period="daily" data-value="day">Daily</li>
+            <li class="control__item control__item_active" data-period="weekly" data-value="week">Weekly</li>
+            <li class="control__item" data-period="monthly" data-value="month">Monthly</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="tracker__content tracker__content_weekly">
+        <article class="card tracker__card card_work" data-title="Work">
+          <div class="card__inner mainColor">
+            <h2 class="card__title">Work</h2>
+            <div class="card__control">•••</div>
+            <h3 class="card__time">32hrs</h3>
+            <p class="card__previousTime">Last Week - 36hrs</p>
+          </div>
+        </article>
+
+        <article class="card tracker__card card_play" data-title="Play">
+          <div class="card__inner mainColor">
+            <h2 class="card__title">Play</h2>
+            <div class="card__control">•••</div>
+            <h3 class="card__time">10hrs</h3>
+            <p class="card__previousTime">Last Week - 8hrs</p>
+          </div>
+        </article>
+
+        <article class="card tracker__card card_study" data-title="Study">
+          <div class="card__inner mainColor">
+            <h2 class="card__title">Study</h2>
+            <div class="card__control">•••</div>
+            <h3 class="card__time">4hrs</h3>
+            <p class="card__previousTime">Last Week - 7hrs</p>
+          </div>
+        </article>
+
+        <article class="card tracker__card card_exercise" data-title="Exercise">
+          <div class="card__inner mainColor">
+            <h2 class="card__title">Exercise</h2>
+            <span class="card__control">•••</span>
+            <h3 class="card__time">4hrs</h3>
+            <p class="card__previousTime">Last Week - 5hrs</p>
+          </div>
+        </article>
+
+        <article class="card tracker__card card_social" data-title="Social">
+          <div class="card__inner mainColor">
+            <h2 class="card__title">Social</h2>
+            <div class="card__control">•••</div>
+            <h3 class="card__time">5hrs</h3>
+            <p class="card__previousTime">Last Week - 10hrs</p>
+          </div>
+        </article>
+
+        <article class="card tracker__card card_self-care" data-title="Self Care">
+          <div class="card__inner mainColor">
+            <h2 class="card__title">Self Care</h2>
+            <div class="card__control">•••</div>
+            <h3 class="card__time">2hrs</h3>
+            <p class="card__previousTime">Last Week - 2hrs</p>
+          </div>
+        </article>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer page__footer">
+    Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="footer__link footer__link_profile" href="#" target="_blank">Your Name Here</a>.
+  </footer>
+  
+  <script src="./script/script.js"></script>
+</body>
+</html>
