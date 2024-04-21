@@ -1,0 +1,346 @@
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 30%, 0.514);
+    position: fixed;
+    z-index: 50;
+}
+
+.modal {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 730px;
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.page__modal {
+    z-index: 99;
+    position: fixed;
+    top: 10vh;
+    left: calc(50% - 365px);
+}
+
+.modal__title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.modal__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: hsl(0, 0%, 48%);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: .8;
+    cursor: pointer;
+    transition: color .1s ease-in;
+}
+
+.modal__close:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+.modal__subtitle {
+    margin: 20px 0 40px 0;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inner__card {
+    position: relative;
+    display: inline-block;
+    padding: 30px 20px 0px 75px;
+    border: 1px solid hsl(0, 0%, 48%, .5);
+    color: hsl(176, 72%, 28%);
+    border-radius: 10px;
+}
+
+.inner__card::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 48%, .5);
+    cursor: pointer;
+}
+
+.inner__card::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: hsl(176, 50%, 47%);
+    transform: scale(0);
+    transition: transform .1s ease-in;
+}
+
+.inner__radio {
+    display: none;
+}
+
+.inner__card:has(.inner__radio:checked)::after{
+    transform: scale(1);
+}
+
+.inner__card:has(.inner__radio:checked) {
+    border: 1px solid hsl(176, 50%, 47%);
+}
+
+.inner__title {
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    color: hsl(0, 0%, 0%);
+    transition: color .1s ease-in;
+    cursor: pointer;
+}
+
+.inner__title:hover {
+    color: hsl(176, 50%, 47%);
+}
+
+.inner__price {
+    font-size: 16px;
+    color: hsl(176, 50%, 47%);
+    font-weight: 800;
+    margin-left: 14px;
+}
+
+.inner__stock {
+    font-size: 18px;
+    font-weight: 800;
+    color: hsl(0, 0%, 0%);
+    float: right;
+}
+
+.inner__stock_small {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.inner__description {
+    margin: 18px 0 30px 0;
+    font-size: 15px;
+    line-height: 1.9;
+    letter-spacing: .04px;
+}
+
+.pledge {
+    height: 0px;
+    transition: height .25s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% + 95px);
+    left: -75px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pledge::before {
+    display: none;
+    position: absolute;
+    left: 0%;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid hsl(176, 50%, 47%);
+}
+
+.inner__card:has(.inner__radio:checked) .pledge {
+    height: 94px;
+}
+
+.inner__card:has(.inner__radio:checked) .pledge::before {
+    display: inline-block;
+}
+
+.inner__card:has(.inner__radio:checked) .inner__title {
+    color: hsl(176, 50%, 47%);
+}
+
+.pledge__inner {
+    width: 100%;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 2.75fr 1fr 1fr;
+    align-content: center;
+    letter-spacing: -.5px;
+}
+
+.pledge__text {
+    align-self: center;
+}
+
+.pledge__pill {
+    width: 105px;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+.pledge__pill_small {
+    width: 100px;
+    grid-column: 2/3;
+}
+
+.pledge__input {
+    justify-self: end;
+    position: relative;
+}
+
+.pledge__input::after {
+    content: "$";
+    position: absolute;
+    left: 25px;
+    top: 14px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.pledge__input_error::before {
+    display: inline;
+    content: 'Enter a valid pledge';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.pledge__amount {
+    position: relative;
+    border: 1px solid hsl(0, 0%, 48%, .5);
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px 10px 5px 40px;
+}
+
+.pledge__amount_error {
+    border: 1px solid red;
+}
+
+.pledge__amount:focus {
+    border: 1px solid hsl(0, 0%, 48%);
+}
+
+.pledge__submit {
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .1s ease-in;
+}
+.pledge__submit:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+.pledge__submit:disabled {
+    cursor: default;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.inner__card_disabled {
+    border: 1px solid hsl(0, 0%, 48%, .3);
+}
+.inner__card_disabled::before,
+.inner__card_disabled::after,
+.inner__card_disabled > *,
+.inner__card_disabled > *::before,
+.inner__card_disabled > *::after
+ {
+    cursor: default;
+    opacity: .3;
+    color: hsl(176, 50%, 47%);
+}
+
+@media  screen and (max-width:768px) {
+    .page__modal {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media  screen and (max-width:576px) {
+    .inner__card:nth-child(1) {
+        padding: 32px 20px 0 20px;
+    }
+
+    .inner__card {
+        padding: 22px 20px 0 20px;
+    }
+
+    .inner__title {
+        margin-left: 60px;
+    }
+
+    .inner__price {
+        display: block;
+        margin-left: 60px;
+        font-size: 14px;
+    }
+
+    .inner__stock {
+        float: none;
+        margin-left: 60px;
+        font-size: 14px;
+    }
+
+    .pledge {
+        width: calc(100% + 40px);
+        left: -20px;
+    }
+
+    .pledge__inner {
+        grid-template-columns: none;
+        padding: 0;
+        row-gap: 10px;
+    }
+
+    .pledge__text {
+        grid-row: 1/2;
+        grid-column: 1/3;
+        justify-self: center;
+    }
+
+    .pledge__input {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .pledge__submit {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-self: center;
+    }
+}
